@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex items-center justify-center h-screen bg-cover bg-center relative" style="background-image: url('bg2.jpeg');">
+
+    <!-- Left Box (Scrolling Gallery) -->
+    <div class="box left-box">
+        <div class="gallery">
+            <div class="gallery-track">
+                <img src="1.jpg" alt="Image 1">
+                <img src="2.jpg" alt="Image 2">
+                <img src="4.jpg" alt="Image 3">
+                <img src="5.jpg" alt="Image 4">
+                <img src="6.jpg" alt="Image 5">
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center flex flex-col items-center">
+        <!-- Click Me Button -->
+        <a href="page2.html">
+            <button class="btn-click">Next!</button>
+        </a>
+
+        <!-- Enlarged Circular Profile Image -->
+        <a href="page2.html">
+            <img src="1.jpg" alt="Profile Image" class="w-56 h-56 rounded-full border-8 border-white shadow-xl scale-hover mt-6">
+        </a>
+
+        <!-- Heartbeat Button -->
+        <button class="btn-heart mt-6 text-xl px-8 py-4">💖 My HeartBeat 1,230</button>
+    </div>
+
+    <!-- Right Box (Scrolling Gallery) -->
+    <div class="box right-box">
+        <div class="gallery">
+            <div class="gallery-track">
+                <img src="1.jpg" alt="Image 6">
+                <img src="2.jpg" alt="Image 7">
+                <img src="4.jpg" alt="Image 8">
+                <img src="5.jpg" alt="Image 9">
+                <img src="6.jpg" alt="Image 10">
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>

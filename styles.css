@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap'); /* Alternative if Algerian is unavailable */
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* 📌 Updated Click Me Button */
+
+.btn-click {
+    background-color: #ff4b2b;
+    color: white;
+    padding: 20px 60px;
+    font-size: 48px;
+    font-family: 'Algerian', sans-serif; /* Add fallback font */    
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-click:hover {
+    transform: scale(1.1);
+    background-color: #e63950;
+}
+
+
+.btn-click:hover {
+    transform: scale(1.1);
+    background-color: #e63950;
+}
+
+/* ❤️ Heartbeat Animation for Button */
+.btn-heart {
+    background-color: #ff4d6d;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+    animation: heartbeat 1.5s infinite ease-in-out;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.btn-heart:hover {
+    background-color: #e63950;
+}
+
+/* 🖼 Hover Effect for Profile Image */
+.scale-hover {
+    transition: transform 0.3s ease-in-out;
+}
+
+.scale-hover:hover {
+    transform: scale(1.1);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* 📌 Box Styles */
+.box {
+    width: 150px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-box {
+    left: 50px;
+}
+
+.right-box {
+    right: 50px;
+}
+
+/* 🖼 Scrolling Gallery */
+.gallery {
+    width: 150px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-track {
+    display: flex;
+    flex-direction: column;
+    animation: scrollGallery 5s linear infinite;
+}
+
+.gallery-track img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* 📜 Scrolling Animation */
+@keyframes scrollGallery {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+}
+
+/* ✋ Pause animation on hover */
+.gallery:hover .gallery-track {
+    animation-play-state: paused;
+}
+
