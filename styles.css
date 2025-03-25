@@ -122,4 +122,30 @@ body {
 .gallery:hover .gallery-track {
     animation-play-state: paused;
 }
+/* Make boxes responsive */
+.box {
+    width: 100%;
+    max-width: 350px;
+    margin: 10px auto;
+}
+
+/* Adjust gallery images */
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Adjust button size for small screens */
+.btn-click {
+    padding: 15px 40px;
+    font-size: 24px;
+}
+
+@media (min-width: 768px) {
+    .btn-click {
+        font-size: 32px;
+        padding: 20px 60px;
+    }
+}
 
